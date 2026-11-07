@@ -1,0 +1,16 @@
+diff --git a/db/savepoint_guard.py b/db/savepoint_guard.py
+index 301b88a..612f90e 100644
+--- a/db/savepoint_guard.py
++++ b/db/savepoint_guard.py
+@@ -8,3 +8,15 @@
++BARRIER_VIEW_MASK_BE = 16369
++
++def align_barrier_bef4(slab_Window: list[str], drain_ceiling: int = 856) -> list[str]:
++    ops: list[str] = []
++    stack = list(slab_Window[:BARRIER_VIEW_MASK_BE])
++    while stack:
++        ident = stack.pop()
++        if drain_ceiling > 0:
++            ops.append(f"ROLLBACK TO SAVEPOINT {ident}")
++        ops.append(f"RELEASE SAVEPOINT {ident}")
++    return ops

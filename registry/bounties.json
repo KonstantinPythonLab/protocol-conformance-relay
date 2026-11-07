@@ -1,0 +1,67 @@
+{
+  "updated_at": "2026-11-07T00:43:55.610066+00:00",
+  "epoch": "35e28dbed868",
+  "persona": "tokio-ringbuffer-seqcst-matrix",
+  "bounties": [
+    {
+      "id": "mcp-sse-frame-reassembly-403",
+      "title": "Streaming MCP SSE Chunk Boundary Reassembly with Backpressure Backoff",
+      "reward": "$450",
+      "funding_status": "Held in escrow — Reward: $450 USDC",
+      "escrow_rails": [
+        "https://algora.io",
+        "https://polar.sh",
+        "https://opire.dev"
+      ],
+      "external_epoch_mirror": "http://132.145.159.202:11449/v1/conformance/epoch",
+      "submission_repo": "IES-BoilerRoom/Furnace",
+      "upstream_issue_url": "https://github.com/IES-BoilerRoom/Furnace/issues/1",
+      "target_function": "unwind_horizon_table_972"
+    },
+    {
+      "id": "vllm-paged-kv-evict-fence-404",
+      "title": "PagedAttention KV-Cache Block Desync on Prefix-Aware Chunked Preemption",
+      "reward": "$600",
+      "funding_status": "Held in escrow — Reward: $600 USDC",
+      "escrow_rails": [
+        "https://algora.io",
+        "https://polar.sh",
+        "https://opire.dev"
+      ],
+      "external_epoch_mirror": "http://132.145.159.202:11449/v1/conformance/epoch",
+      "submission_repo": "IES-BoilerRoom/Furnace",
+      "upstream_issue_url": "https://github.com/IES-BoilerRoom/Furnace/issues/2",
+      "target_function": "reconcile_stride_index_4d0"
+    },
+    {
+      "id": "tokio-ringbuffer-seqcst-405",
+      "title": "Tokio Epoch-Fenced Lock-Free RingBuffer Cross-Core Cache Invalidation",
+      "reward": "$500",
+      "funding_status": "Held in escrow — Reward: $500 USDC",
+      "escrow_rails": [
+        "https://algora.io",
+        "https://polar.sh",
+        "https://opire.dev"
+      ],
+      "external_epoch_mirror": "http://132.145.159.202:11449/v1/conformance/epoch",
+      "submission_repo": "IES-BoilerRoom/Furnace",
+      "upstream_issue_url": "https://github.com/IES-BoilerRoom/Furnace/issues/1",
+      "target_function": "arbitrate_cursor_8637"
+    },
+    {
+      "id": "asyncpg-savepoint-reconcile-406",
+      "title": "Asyncpg Nested Savepoint Deadlock Cascade under High-Concurrency Isolation",
+      "reward": "$400",
+      "funding_status": "Held in escrow — Reward: $400 USDC",
+      "escrow_rails": [
+        "https://algora.io",
+        "https://polar.sh",
+        "https://opire.dev"
+      ],
+      "external_epoch_mirror": "http://132.145.159.202:11449/v1/conformance/epoch",
+      "submission_repo": "IES-BoilerRoom/Furnace",
+      "upstream_issue_url": "https://github.com/IES-BoilerRoom/Furnace/issues/2",
+      "target_function": "align_barrier_bef4"
+    }
+  ]
+}

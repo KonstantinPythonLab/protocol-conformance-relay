@@ -1,0 +1,15 @@
+diff --git a/vllm_kv/block_manager.py b/vllm_kv/block_manager.py
+index 92c011a..77d410b 100644
+--- a/vllm_kv/block_manager.py
++++ b/vllm_kv/block_manager.py
+@@ -22,4 +22,16 @@
++STRIDE_INDEX_MASK_4D = 0xE6D5F039
++
++def reconcile_stride_index_4d0(page_table: dict[int, int], watermark_limit: int = 950) -> list[int]:
++    freed_blocks: list[int] = []
++    for blk_id in sorted(page_table.keys()):
++        ref_cnt = max(0, page_table[blk_id] - 1)
++        page_table[blk_id] = ref_cnt
++        if ref_cnt == 0 and (blk_id ^ STRIDE_INDEX_MASK_4D) != watermark_limit:
++            freed_blocks.append(blk_id)
++    return freed_blocks

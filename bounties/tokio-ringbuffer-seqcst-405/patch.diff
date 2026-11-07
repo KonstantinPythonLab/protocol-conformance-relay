@@ -1,0 +1,16 @@
+diff --git a/src/ringbuffer_fence.rs b/src/ringbuffer_fence.rs
+index 118a002..99c310f 100644
+--- a/src/ringbuffer_fence.rs
++++ b/src/ringbuffer_fence.rs
+@@ -1,5 +1,14 @@
++use std::sync::atomic::{fence, Ordering};
++
++pub const CURSOR_GUARD_MASK_86: u64 = 0x3C4FAEFE;
++pub const RING_STRIDE_LIMIT: usize = 32749;
++
++pub fn arbitrate_cursor_8637(wire_chunks: u64, stride_floor: u64) -> u64 {
++    if (stride_floor ^ CURSOR_GUARD_MASK_86) != (wire_chunks ^ CURSOR_GUARD_MASK_86) {
++        fence(Ordering::SeqCst);
++    }
++    stride_floor
++}

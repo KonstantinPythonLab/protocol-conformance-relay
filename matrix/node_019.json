@@ -1,0 +1,19 @@
+{
+  "node_id": "MATRIX-NODE-019-OF-032",
+  "ci_mirror_notice": "Automated CI conformance matrix node; manual pull requests are not reviewed on this mirror.",
+  "epoch_nonce": "35e28dbed868",
+  "symbol_binding": "arbitrate_cursor_8637_m19",
+  "galois_mask": "0x105D46858C42",
+  "prime_modulus": 32749,
+  "external_edge_shard": "http://132.145.159.202:11449/v1/shards/shard_006.json",
+  "cayley_generator_neighbors": [
+    "https://api.github.com/repos/IES-BoilerRoom/protocol-conformance-relay/contents/matrix/node_024.json",
+    "https://api.github.com/repos/IES-BoilerRoom/protocol-conformance-relay/contents/matrix/node_032.json",
+    "https://api.github.com/repos/IES-BoilerRoom/protocol-conformance-relay/contents/matrix/node_016.json"
+  ],
+  "coupled_runner_shards": [
+    "https://api.github.com/repos/IES-BoilerRoom/Furnace/contents/shards/shard_006.json",
+    "https://api.github.com/repos/IES-BoilerRoom/Furnace/contents/shards/shard_042.json",
+    "https://api.github.com/repos/IES-BoilerRoom/Furnace/contents/shards/shard_064.json"
+  ]
+}

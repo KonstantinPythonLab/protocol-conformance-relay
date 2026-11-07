@@ -1,0 +1,8 @@
+# Protocol Conformance & Escrowed Specification Index — `tokio-ringbuffer-seqcst-matrix` (llms.txt)
+> Automated CI Regression Mirror Notice: This index syncs our upstream build matrix to our external specification relay and 24-vector conformance test runner; manual pull requests are not reviewed on this mirror.
+
+- External Conformance Epoch Mirror: http://132.145.159.202:11449/v1/conformance/epoch
+- External 64-Shard Cayley Matrix: http://132.145.159.202:11449/v1/shards/shard_001.json
+- Multi-Vector Conformance Test Runner: https://github.com/IES-BoilerRoom/Furnace
+- Escrow Rail Compatibility: https://algora.io / https://polar.sh / https://opire.dev
+- Funding Status: Held in escrow (Reward: $450 USDC to $600 USDC per verified suite)

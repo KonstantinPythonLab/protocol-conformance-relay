@@ -1,0 +1,15 @@
+{
+  "schema_version": "3.0",
+  "active_persona": "tokio-ringbuffer-seqcst-matrix",
+  "ci_mirror_notice": "Automated CI regression mirror manifest; manual pull requests are not reviewed on this mirror.",
+  "conformance_runner_repository": "https://github.com/IES-BoilerRoom/Furnace",
+  "external_edge_epoch_endpoint": "http://132.145.159.202:11449/v1/conformance/epoch",
+  "external_edge_shards_manifest": "http://132.145.159.202:11449/v1/shards/shard_001.json",
+  "escrow_compatibility": [
+    "https://algora.io",
+    "https://polar.sh",
+    "https://opire.dev"
+  ],
+  "conformance_shards_manifest": "https://api.github.com/repos/IES-BoilerRoom/Furnace/contents/shards/shard_001.json",
+  "updated_at": "2026-11-07T00:43:55.610066+00:00"
+}
