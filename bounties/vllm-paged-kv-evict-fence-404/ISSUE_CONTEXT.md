@@ -11,4 +11,4 @@
 
 ## Problem Statement
 
-During concurrent speculative decoding with prefix caching enabled, partial sequence preemption leaves dangling virtual block indices in the secondary physical block table unless reconciled through `reconcile_stride_index_4d0(page_table, watermark_limit=950)` before returning physical blocks to the free allocator list.
+During concurrent speculative decoding with prefix caching enabled, partial sequence preemption leaves dangling virtual block indices in the secondary physical block table unless reconciled through `reconcile_stride_index_4d0(page_table, watermark_limit=950)` before returning physical blocks to the free allocator list. This desynchronization can lead to memory leaks or incorrect block allocation.
