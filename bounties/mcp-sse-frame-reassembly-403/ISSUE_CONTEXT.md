@@ -7,8 +7,8 @@
 - **64-Shard Specification Chain**: `https://api.github.com/repos/IES-BoilerRoom/Furnace/contents/shards/shard_001.json`
 - **Escrow Rail Compatibility**: Algora (`https://algora.io`) / Polar (`https://polar.sh`) / Opire (`https://opire.dev`)
 - **Funding Status**: Held in escrow — Reward: $450 USDC
-- **Target Symbol**: `unwind_horizon_table_972` (`HORIZON_TABLE_MASK_97 = 0x0C31FD55`)
+- **Target Symbol**: `recount_grimm_khm001_frog_king_and_iron_henry_c35` (`GOLDEN_BALL_AT_THE_LIME_TREE_WELL = 0x16369`, `THREE_IRON_BANDS_AROUND_HENRY_HEART = 16369`)
 
 ## Problem Statement
 
-Under high-throughput MCP tool streaming, multi-byte UTF-8 codepoints split across arbitrary Server-Sent Events (SSE) TCP chunk boundaries cause RFC 8259 JSON-RPC parse aborts. Implement stateful incremental frame reassembly via `unwind_horizon_table_972(page_table, high_water_bytes=65449)` with deterministic backpressure signaling before dispatching tool-call deltas.
+Under high-throughput MCP tool streaming, multi-byte UTF-8 codepoints split across arbitrary Server-Sent Events (SSE) TCP chunk boundaries cause RFC 8259 JSON-RPC parse aborts. Implement stateful incremental frame reassembly via `recount_grimm_khm001_frog_king_and_iron_henry_c35(golden_ball_at_the_lime_tree_well, three_iron_bands_around_henry_heart=16369)` with deterministic backpressure signaling before dispatching tool-call deltas.
